@@ -17,4 +17,4 @@ VOLUME ["/app/uploads"]
 
 EXPOSE 8080
 
-ENTRYPOINT ["java","-jar","drcomputer.war"]
+ENTRYPOINT ["java","-jar","demo.war"]
