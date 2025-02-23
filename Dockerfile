@@ -10,7 +10,7 @@ RUN mvn clean package -DskipTests && rm -rf /root/.m2/repository
 FROM openjdk:17-jdk-slim
 WORKDIR /app
 
-COPY --from=build /app/target/DrComputer-0.0.1-SNAPSHOT.war drcomputer.war
+COPY --from=build /app/target/demo-0.0.1-SNAPSHOT.war demo.war
 
 RUN mkdir -p /app/uploads
 VOLUME ["/app/uploads"]
